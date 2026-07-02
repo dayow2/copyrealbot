@@ -9,4 +9,5 @@ COPY . .
 
 EXPOSE 8000
 
+# Strict JSON-array execution format to bypass interactive terminals
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
